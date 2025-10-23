@@ -1,0 +1,45 @@
+/* Navbar background color classes */
+.navbar-green {
+    background: #228B22;
+}
+.navbar-transparent {
+    background: transparent;
+}
+.container {
+    margin-top: 2rem;
+    padding: 0 2rem;
+  
+}
+
+.containerpers {
+    margin-top: 2rem;
+    padding: 0 2rem;
+}
+
+.grid {
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+}
+
+.navbar {
+    padding: 0.5rem 0;
+}
+
+.navbar .container {
+    margin-top: 0;
+    max-width: 1400px;
+    padding: 0 2rem;
+   
+}
+
+/* Make navbar sticky */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Active link styling */
+.nav-link.active {
+    font-weight: bold;
+}
