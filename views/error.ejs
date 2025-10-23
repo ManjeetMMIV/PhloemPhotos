@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Error</title>
+   <link rel="icon" type="image/png" href="images/uploads/PPlogo.png">
+  <link rel="stylesheet" href="/stylesheets/style.css" />
+  <style>
+    .error-container { max-width:600px; margin:60px auto; padding:20px; background:#fff; border-radius:6px; box-shadow:0 2px 6px rgba(0,0,0,0.1); }
+    .error-status { font-size:48px; font-weight:700; margin:0; }
+    .error-message { color:#666; }
+    pre { background:#f7f7f7; padding:10px; overflow:auto; }
+  </style>
+</head>
+<body>
+  <div class="error-container">
+    <h1 class="error-status"><%= status || 500 %></h1>
+    <p class="error-message"><%= message %></p>
+    <% if (error && Object.keys(error).length) { %>
+      <h3>Stack (development only)</h3>
+      <pre><%= error.stack %></pre>
+    <% } %>
+    <p><a href="/">Go back home</a></p>
+  </div>
+</body>
+</html>

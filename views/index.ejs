@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Updated title to be more descriptive -->
+    <title>Register | Phloem Photos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Assuming style.css is in this path -->
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+     <link rel="icon" type="image/png" href="images/uploads/PPlogo.png">
+</head>
+<body>
+    <div class="container">
+      <div class="content">
+        <!--pp logo-->
+        <img src="images/uploads/PPlogo.png" alt="pp logo" class="img1" />
+        <p class="header"><strong>PhloemPhotos</strong></p>
+
+        <!-- === NEW CONTENT START === -->
+        <p class="tagline">"Capture the Essence!"</p>
+        <p class="description">
+          A community-driven platform for creators to find visual ideas, draw inspiration from a gallery of user-uploaded images, and share their own photographic work.
+        </p>
+        <p class="call-to-action">Make an account to join the community!</p>
+        <!-- === NEW CONTENT END === -->
+        
+        <form action="/register" method="post">
+            <input type="email" name="email" placeholder="Email" class="detail" /><br />
+            <input type="text" name="username" placeholder="Username" class="detail" /><br />
+            <input type="text" name="fullname" placeholder="Full Name" class="detail" />
+            <input type="password" name="password" placeholder="Password" class="detail">
+            <button type="submit" class="btn int" value="Register Account">Register Account</button>
+        </form>
+    
+
+        
+        <!-- <p class="or">OR</p>
+        <button class="btn fbk">
+          <i
+            class="fab fa-facebook fa-lg"
+            style="color: white; padding-right: 10px"
+          ></i
+          ><a href="#">Continue with Facebook</a></button
+        ><br />
+        <button class="btn ggl">
+          <i
+            class="fab fa-google"
+            style="color: rgb(11, 241, 22); padding-right: 10px"
+          ></i
+          ><a href="#">Continue with Google</a>
+        </button> -->
+
+        <footer>
+          <p>
+            By continuing, you agree to PhloemPhotos's
+            <b>Terms of Service, Privacy policy.</b>
+          </p>
+          <hr />
+          <a href="/login">Already on PhloemPhotos? Login </a>
+        </footer>
+      </div>
+    </div>
+    
+
+</body>
+</html>

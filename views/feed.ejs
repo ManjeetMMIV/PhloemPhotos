@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinterest Feed</title>
+     <link rel="icon" type="image/png" href="images/uploads/PPlogo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/navbar.css" />
+    <style>
+       body {
+  /* Set body height to 100% of the viewport height */
+  min-height: 100vh; 
+  
+  /* Set a fallback color matching the image's dark edges (good practice) */
+  background-color: #2F4F4F; 
+  
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url('../images/uploads/bg2.png');
+  
+  /* Ensure the image covers the entire body/viewport */
+  background-size: cover;       
+  background-position: center;  
+  background-repeat: no-repeat; 
+}
+        .grid {
+            column-count: 3;       /* Number of columns */
+            column-gap: 16px;      /* Space between columns */
+            padding: 16px;
+        }
+        .card {
+            break-inside: avoid;   /* Prevent card from breaking across columns */
+            margin-bottom: 16px;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+        }
+
+        .card img {
+            width: 100%;
+            display: block;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover img {
+            transform: scale(1.05);
+        }
+
+        .card a {
+            display: block;
+            text-decoration: none;
+        }
+
+        .card-content {
+            padding: 12px;
+        }
+
+        .card-content p {
+            margin: 0;
+            color: #333;
+            font-size: 14px;
+        }
+
+        .user-info {
+            display: flex;
+            align-items: center;
+            padding: 8px 12px;
+            border-top: 1px solid #eee;
+        }
+
+        .user-info span {
+            color: #666;
+            font-size: 14px;
+        }  
+        .search-input {
+  border: 2px solid #c7eac7;          /* subtle greenish outline */
+  border-radius: 12px;                /* smooth rounded corners */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);  /* soft shadow */
+  transition: all 0.2s ease-in-out;
+ 
+}
+
+.search-input:focus {
+  border-color: #228B22;              /* highlight color */
+  box-shadow: 0 0 6px rgba(34, 139, 34, 0.4);
+  outline: none;                      /* remove blue default */
+}
+
+        </style>
+</head>
+<body>
+    <%- include('partials/navbar') %>
+
+<div class="container mt-3">
+    <div class="search-wrapper" style="max-width:560px;margin:0 auto;">
+        <form class="d-flex mb-3" method="GET" action="/feed" style="gap:8px;">
+            <input class="form-control search-input" type="search" name="q" placeholder="Search captions..." aria-label="Search" value="<%= typeof q !== 'undefined' ? q : '' %>">
+            <button class="btn" type="submit" style="background:#228B22; color:#fff; border:1px solid #1fcfcf; padding:6px 12px;">Search</button>
+        </form>
+    </div>
+</div>
+
+<div class="grid">
+        <% if (!posts || posts.length === 0) { %>
+            <% if (q && q.length > 0) { %>
+                <div class="p-3">No results found for "<%= q %>".</div>
+            <% } else { %>
+                <div class="p-3">No posts yet.</div>
+            <% } %>
+        <% } %>
+
+        <% posts.forEach(function(post) { %>
+        <div class="card">
+            <% if (post.image) { %>
+                <!-- <a href="/post/<%= post._id %>"> -->
+                    <img src="/images/uploads/<%= post.image %>" alt="<%= post.postText %>">
+                <!-- </a> -->
+            <% } %>
+            <div class="card-content">
+                <p><%= post.postText %></p>
+            </div>
+            <div class="user-info">
+                <span>Posted by <%= post.user.username %></span>
+            </div>
+        </div>
+    <% }); %>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
