@@ -1,6 +1,9 @@
 # PhloemPhotos
-**PhloemPhotos  "Capture the Essence!"  A community-driven platform for creators to find visual ideas, draw inspiration from a gallery of user-uploaded images, and share their own photographic work.
-🌿 Phloem Photos: A Visual Inspiration and Community Platform**
+🌿 **Phloem Photos: A Visual Inspiration and Community Platform**
+
+
+PhloemPhotos  "Capture the Essence!"  A community-driven platform for creators to find visual ideas, draw inspiration from a gallery of user-uploaded images, and share their own photographic work.
+
 
 Phloem Photos is a high-quality, community-driven web application designed for creators and visual thinkers. It serves as a centralized gallery where users can search for inspiration, share their own photographic work, and engage with a curated feed of nature-inspired imagery.
 
