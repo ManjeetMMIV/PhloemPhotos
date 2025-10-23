@@ -1,6 +1,6 @@
 # PhloemPhotos
-PhloemPhotos  "Capture the Essence!"  A community-driven platform for creators to find visual ideas, draw inspiration from a gallery of user-uploaded images, and share their own photographic work.
-🌿 Phloem Photos: A Visual Inspiration and Community Platform
+**PhloemPhotos  "Capture the Essence!"  A community-driven platform for creators to find visual ideas, draw inspiration from a gallery of user-uploaded images, and share their own photographic work.
+🌿 Phloem Photos: A Visual Inspiration and Community Platform**
 
 Phloem Photos is a high-quality, community-driven web application designed for creators and visual thinkers. It serves as a centralized gallery where users can search for inspiration, share their own photographic work, and engage with a curated feed of nature-inspired imagery.
 
@@ -27,70 +27,15 @@ User Profiles: Dedicated profiles to showcase a creator's uploaded content.
 Minimalist UI: Clean, green-themed design () focusing attention on the image content.
 
 💻 Tech Stack
+<img width="957" height="481" alt="image" src="https://github.com/user-attachments/assets/bfb44c5b-b466-48dc-99fe-ac3a67204d45" />
 
-Category
 
-Technology
-
-Purpose
-
-Backend
-
-Node.js & Express.js
-
-Provides a robust, scalable API layer and handles routing, authentication, and database interaction.
-
-Database
-
-MongoDB
-
-Flexible NoSQL database used to store user data, photo metadata, and tags.
-
-Templating
-
-EJS (Embedded JavaScript)
-
-Used for dynamic rendering of HTML views (like the feed, profile, and login pages).
-
-File Handling
-
-Multer
-
-Middleware for processing multipart/form-data, specifically for managing image uploads to the server.
-
-Frontend
-
-HTML5 & CSS3
-
-Clean, responsive, and minimalist styling to complement the nature theme.
-
-📂 Project Structure
+📂 **Project Structure**
 
 The file structure is organized following standard Express conventions, making it clean and easy to navigate:
 
-PINTEREST-CLONE/       # Project Root
-├── bin/                 # Server startup script
-├── models/              # MongoDB Schemas (e.g., User, Post)
-├── public/              # Static assets accessible to the browser
-│   ├── images/          # Image files
-│   │   └── uploads/     # Destination for Multer uploaded images
-│   ├── javascripts/     # Frontend JS files
-│   └── stylesheets/     # CSS files
-├── routes/              # Express routing modules
-│   ├── index.js         # Public routes (Home, Login, Register)
-│   ├── multer.js        # Multer configuration/middleware
-│   ├── post.js          # Routes for handling photo posts (upload, search)
-│   └── users.js         # Routes for user authentication and profiles
-├── views/               # EJS template files
-│   ├── partials/        # Reusable templates (navbar)
-│   ├── error.ejs        
-│   ├── feed.ejs         # Main photo gallery
-│   ├── index.ejs        # Landing page
-│   ├── login.ejs        
-│   └── profile.ejs      
-├── app.js               # Main Express application configuration
-├── package.json         # Project dependencies and scripts
-└── .env (Excluded)      # Environment variables (DB connection, secrets)
+<img width="901" height="603" alt="image" src="https://github.com/user-attachments/assets/f77cff67-6eba-4fd4-bf86-b47c041f69c7" />
+
 
 
 ⚙️ Getting Started
@@ -105,7 +50,7 @@ MongoDB (Local instance or MongoDB Atlas)
 
 1. Clone the repository
 
-git clone [Your-Repository-URL-Here]
+git clone [Repository-URL-Here]
 cd phloem-photos
 
 
