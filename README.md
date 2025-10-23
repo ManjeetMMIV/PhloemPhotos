@@ -7,7 +7,7 @@ PhloemPhotos  "Capture the Essence!"  A community-driven platform for creators t
 
 Phloem Photos is a high-quality, community-driven web application designed for creators and visual thinkers. It serves as a centralized gallery where users can search for inspiration, share their own photographic work, and engage with a curated feed of nature-inspired imagery.
 
-This project demonstrates proficiency in the full-stack MERN-lite architecture, focusing on secure user authentication, efficient file handling, and robust database modeling.
+This project demonstrates proficiency in the full-stack HTML,CSS, Express.js, Node.js, MongoDB architecture, focusing on secure user authentication, efficient file handling, and robust database modeling.
 <img width="1913" height="974" alt="image" src="https://github.com/user-attachments/assets/6211b471-1c0b-4961-b4f2-4790aa7d5325" />
 <img width="1918" height="978" alt="image" src="https://github.com/user-attachments/assets/19c860b1-a781-4cbe-8d49-03adeaf11db1" />
 <img width="1914" height="981" alt="image" src="https://github.com/user-attachments/assets/be86744c-2c57-440c-a5f1-f5cc0a8852f5" />
